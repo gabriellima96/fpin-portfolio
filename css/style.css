@@ -1,0 +1,307 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Menu */
+
+.menu {
+	background: #252525;
+	padding: 20px 0;
+}
+
+.menu-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+a.menu-logo {
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+.menu-nav {
+	float: right;
+	margin-right: 10px;
+}
+
+.menu-nav li {
+	display: inline-block;
+}
+
+.menu-nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.menu {
+		text-align: center;
+	}
+	a.menu-logo {
+		float: none;
+		margin: 0 auto;
+	}
+	.menu-nav {
+		float: none;
+		clear: both;
+	}
+}
+
+/* Intro */
+
+.intro {
+	background: url('./assets/background-body.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.intro h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro h1::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin: 10px auto;
+}
+
+.intro p {
+	font-style: italic;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.intro {
+		padding: 60px 0;
+	}
+}
+
+/* Sobre */
+
+.sobre {
+	padding: 60px 0;
+}
+
+.sobre-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.sobre-container::after, .sobre-container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.sobre h2 {
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 60px;
+}
+
+.sobre-item {
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+.sobre-item img {
+	display: block;
+	max-width: 100%;
+}
+
+.sobre-item h3 {
+	font-size: 2.25em;
+	line-height: 1em;
+	background: #252525;
+	width: 220px;
+	color: #fff;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	padding: 5px 0 10px 0;
+	top: -25px;
+	position: relative;
+}
+
+.sobre > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 460px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.sobre-container {
+		max-width: 720px;
+	}
+	.sobre-item {
+		width: 340px;
+	}
+}
+
+@media (max-width: 739px) {
+	.sobre-container {
+		max-width: 300px;
+	}
+	.sobre-item {
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+/* Projetos */
+
+.projetos {
+	max-width: 960px;
+	margin: 0 auto;
+	
+}
+
+.projetos h2 {
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 60px;
+}
+
+.projetos-item {
+	clear: both;
+	margin: 60px auto;
+}
+
+.projetos-item::after, .projetos-item::before {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.projeto-item img {
+	width: 460px;
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+.projetos-item > div {
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+.projetos-item h2 {
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.projetos-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.projetos {
+		max-width: 720px;
+	}
+	.projetos-item > div, .projetos-item img {
+		width: 340px;
+	}
+}
+
+@media (max-width: 739px) {
+	.projetos {
+		max-width: 300px;
+	}
+	.projetos-item > div, .projetos-item img {
+		width: 300px;
+		margin: 0px;
+	}
+}
+
+/*Footer*/
+
+.footer {
+	background: #252525;
+	padding: 40px 0;
+	color: #fff;
+}
+
+.footer-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.footer-container::after, .footer-container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.footer p {
+	float: left;
+	margin: 0 10px;
+	font-size: 1.125em;
+	line-height: 1.4em;
+}
+
+.footer img {
+	float: right;
+	margin: 0 10px;
+	display: block;
+}
+
+@media (max-width: 739px) {
+	.footer-container {
+		max-width: 300px;
+	}
+	.footer p {
+		float: none;
+		margin: 0px;
+	}
+	.footer img {
+		float: none;
+		margin: 20px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

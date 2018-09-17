@@ -6,94 +6,87 @@
     <meta charset="utf-8">
     <meta name="description" content="Professional portfolio by Gabriel and Mayara - amazing brazilians developers!">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://use.fontawesome.com/331ca807fa.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-
-            <img src="assets/Logo.png" alt="Logo do Portfólio">
-            <nav class="menu">
+    <header class="menu">
+        <div class="menu-container">
+            <a class="menu-logo" href="#"><img src="assets/Logo.png" alt="Logo do Portfólio"></a>
+            <nav class="menu-nav">
                 <ul>
                     <li>
-                        <a class="link" href="#">Sobre</a>
+                        <a href="#sobre" class="scrollSuave">Sobre</a>
                     </li>
                     <li>
-                        <a class="link" href="#">Contato</a>
+                        <a href="#projetos" class="scrollSuave">Projetos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Menu com o nome dos desenvolvedores -->
+    <main class="intro">
+        <p> Portfólio
+            <br> dos Desenvolvedores </p>
+        <h1> Gabriel Lima e Mayara Rysia </h1>
+    </main>
 
-    <div class="submenu">
-        <ul>
-            <li class="female">
-                <a class="link" href="html/mayara.html">Mayara Rysia</a>
-            </li>
-            <li class="male">
-                <a class="link" href="html/gabriel.html">Gabriel Lima</a>
-            </li>
-        </ul>
-    </div>
+    <section class="sobre" id="sobre">
+        <h2>Somos estudantes de SI</h2>
+        <div class="sobre-container">
 
-    <!-- Seção onde os conteúdos serão inseridos -->
-
-    <section id="conteudo">
-
+            <div class="sobre-item">
+                <img src="assets/goku.jpg">
+                <h3>Gabriel <br> Lima</h3>
+            </div>
+            <div class="sobre-item">
+                <img src="assets/bulma.jpeg">
+                <h3>Mayara Rysia</h3>
+            </div>
+        </div>
+        <p>Graduandos em Sistemas de Informação pelo IFAL. consectetur adipiscing elit. Sed vestibulum scelerisque ex,
+            luctus elementum est
+            efficitur eu. Donec eget purus nulla. Fusce pulvinar, elit id congue luctus, ex nulla suscipit nisi, at
+            aliquet
+            metus eros et ante. Duis aliquam metus nulla, in mattis enim molestie sit amet. Vivamus quis maximus quam.
+        </p>
     </section>
 
-    <footer class="rodape">
-        <center>
-            <p>
-                <strong>M</strong>
-                <span class="home-social-media-links">
-                    <a href="https://www.linkedin.com/in/rysia/" alt="link to LinkedIn profile" target="_blank">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a> &diams;
-                    <a href="https://github.com/mayararysia/" alt="link to Github profile" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a> &diams;
-                    <a href="https://twitter.com/mayararysia_" alt="link to Twitter profile" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </span>
-            </p>
-            <p>
-                <strong>G</strong>
-                <span class="home-social-media-links">
-                    <a href="" alt="link to LinkedIn profile" target="_blank">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a> &diams;
-                    <a href="https://github.com/gabriellima96" alt="link to Github profile" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a> &diams;
-                    <a href="" alt="link to Twitter profile" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </span>
-            </p>
-        </center>
+    <section class="projetos" id="projetos">
+        <h2>Nossos projetos</h2>
+
+        <div class="projetos-item">
+            <img src="assets/maxresdefault.jpg">
+            <div>
+                <h2>Projeto 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum scelerisque ex, luctus
+                    elementum
+                    est efficitur eu. elit id congue lu.</p>
+            </div>
+        </div>
+
+        <div class="projetos-item">
+            <img src="assets/carro.jpg">
+            <div>
+                <h2>Projeto 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum scelerisque ex, luctus
+                    elementum
+                    est efficitur eu. Fusce pulvinar, elit id congue lu.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.</p>
+            <img src="assets/Logo.png">
+        </div>
     </footer>
 
-    <!-- Script da requisição Ajax -->
-
-    <script>
-        document.querySelectorAll('.link').forEach(link => {
-            const conteudo = document.getElementById('conteudo')
-
-            link.onclick = function (e) {
-                e.preventDefault()
-                fetch(link.href)
-                    .then(resp => resp.text())
-                    .then(html => conteudo.innerHTML = html)
-            }
-        })
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
